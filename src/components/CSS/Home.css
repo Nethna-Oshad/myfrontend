@@ -1,0 +1,56 @@
+/* Portfolio Section Styles */
+.portfolio-section {
+    position: relative;
+    min-height: 100vh;
+    background: url('C:\Users\Nethna\Desktop\Portfolio\myfrontend\public\My.jpg') center/cover no-repeat;
+    /*background-image: url(${blackAndWhitePhoto});*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+
+  }
+  
+  .portfolio-section .profile-photo {
+    position: relative;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+  }
+  
+  .portfolio-section .profile-photo img {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease, transform 0.5s ease;
+  }
+  
+  .portfolio-section .profile-photo:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+  }
+  
+  .projects-section {
+    padding: 5rem 0;
+  }
+  
+  .projects-section .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .projects-section .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  .btn-light:hover {
+    background-color: #f8f9fa;
+    color: #000;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
